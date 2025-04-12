@@ -5,10 +5,10 @@ const initialState = {
     boardArray: [],
 };
 
-const boardSlice = createSlice({
+const boardsSlice = createSlice({
     name: "boards",
     initialState,
     reducers: {},
 });
 
-export const boards = boardSlice.reducer;
+export const boardsReducer = boardsSlice.reducer;
