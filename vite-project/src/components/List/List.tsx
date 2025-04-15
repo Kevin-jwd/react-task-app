@@ -16,7 +16,7 @@ type TListProps = {
 
 const List: FC<TListProps> = ({ list, boardId }) => {
     const dispatch = useTypedDispatch();
-    const handleListDelete(listId: string)=>{
+    const handleListDelete = (listId: string)=>{
         dispatch(deleteList({boardId, listId}))
         dispatch(
             addLog({
